@@ -11,7 +11,7 @@
 2. Navigate to the project directory:
 
     ```bash
-    cd your-project
+    cd Basic-Crud-ExpressJS
     ```
 
 3. Install Dependencies:
