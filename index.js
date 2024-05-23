@@ -4,6 +4,12 @@ const port = 3000;
 const db = require("./connection");
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send(
+    "Hello Ini Adalah Api Node Js yaitu Basic Restfull Api Menggunakan Express JS"
+  );
+});
+
 app.get("/products", (req, res) => {
   const sqlQuery = "SELECT * FROM products";
   db.query(sqlQuery, (err, result) => {
